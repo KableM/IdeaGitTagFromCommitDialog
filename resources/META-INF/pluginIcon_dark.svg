@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40">
+<!--    <rect fill="#666666" width="40" height="40" />-->
+    <defs>
+        <mask id="tree">
+            <rect width="100%" height="100%" fill="white" />
+            <g transform="translate(10, 14)">
+                <circle fill="black" cx="0" cy="0" r="3"/>
+                <circle fill="black" cx="10" cy="10" r="3"/>
+                <circle fill="black" cx="10" cy="2" r="3"/>
+                <path stroke="black" stroke-width="2" d="m 0 0 l 18 18"/>
+                <path stroke="black" stroke-width="2" d="m 10 10 l 0 -8" stroke-linecap="square"/>
+            </g>
+        </mask>
+    </defs>
+    <path fill="#EEEEEE" mask="url(#tree)" d="
+    m 4 4
+    l 0 12
+    l 20 20
+    l 12 -12
+    l -20 -20
+    l -12 0
+    "/>
+</svg>

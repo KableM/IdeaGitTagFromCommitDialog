@@ -1,0 +1,22 @@
+<idea-plugin>
+  <id>com.kablemonck.idea.plugins.GitTagFromCommitDialog</id>
+  <name>Git Tag From Commit Dialog</name>
+  <version>1.0.0</version>
+  <vendor email="kable.monck@gmail.com">Kable Monck</vendor>
+
+  <description><![CDATA[
+      Adds an option to tag a commit inside the commit dialog.
+    ]]></description>
+
+  <idea-version since-build="181.0"/>
+
+  <depends>com.intellij.modules.platform</depends>
+  <depends>com.intellij.modules.vcs</depends>
+  <depends>Git4Idea</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <vcsCheckinHandlerFactory implementation="com.kablemonck.idea.plugins.gittag.GitTagCheckinHandlerFactory"/>
+    <projectService serviceImplementation="com.kablemonck.idea.plugins.gittag.GitTagPanelConfiguration"/>
+  </extensions>
+
+</idea-plugin>
