@@ -1,7 +1,7 @@
 <idea-plugin>
   <id>com.kablemonck.idea.plugins.GitTagFromCommitDialog</id>
   <name>Git Tag From Commit Dialog</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <vendor email="kable.monck@gmail.com">Kable Monck</vendor>
 
   <description><![CDATA[
