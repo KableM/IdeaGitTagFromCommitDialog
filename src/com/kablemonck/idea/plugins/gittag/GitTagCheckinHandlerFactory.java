@@ -21,10 +21,4 @@ public class GitTagCheckinHandlerFactory extends VcsCheckinHandlerFactory {
     protected CheckinHandler createVcsHandler(@NotNull CheckinProjectPanel panel, @NotNull CommitContext commitContext) {
         return new GitTagCheckinHandler(panel);
     }
-
-    @NotNull
-    @Override
-    protected CheckinHandler createVcsHandler(@NotNull CheckinProjectPanel panel) {
-        return createVcsHandler(panel, null);
-    }
 }

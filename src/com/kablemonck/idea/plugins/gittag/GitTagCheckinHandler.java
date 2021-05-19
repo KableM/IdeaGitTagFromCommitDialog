@@ -108,11 +108,11 @@ public class GitTagCheckinHandler extends CheckinHandler {
 
     private void notifySuccess(String title, String message) {
         VcsNotifier vcsNotifier = VcsNotifier.getInstance(project);
-        vcsNotifier.notifySuccess(title, message);
+        vcsNotifier.notifySuccess(null, title, message);
     }
 
     private void notifyError(String title, String message) {
-        VcsNotifier.getInstance(project).notifyError(title, message);
+        VcsNotifier.getInstance(project).notifyError(null, title, message);
     }
 
 }
